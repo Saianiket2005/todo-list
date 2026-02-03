@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow | Modern To-Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-card">
+        <header>
+            <h1>FocusFlow</h1>
+            <p id="current-date"></p>
+        </header>
+
+        <div class="7 ">
+            <input type="text" id="task-input" placeholder="What's the goal?">
+            <div class="meta-inputs">
+                <input type="datetime-local" id="task-date">
+                <select id="task-category">
+                    <option value="Personal">🏠 Personal</option>
+                    <option value="Work">💼 Work</option>
+                    <option value="Urgent">🔥 Urgent</option>
+                </select>
+                <button id="add-task-btn">+</button>
+            </div>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Work">Work</button>
+            <button class="filter-btn" data-filter="Personal">Personal</button>
+        </div>
+
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
